@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#000">
+    <title>Заказать дополнительные услуги | MyCrane</title>
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/add_styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container container_2">
+      <div class="sidebar">
+        <div class="sidebar__user"><img class="sidebar__user-img" src="img/icons/user.svg" alt="ООО “ХимСтрой”">
+          <div class="sidebar__user-info">
+            <div class="sidebar__user-title">ООО “ХимСтрой”</div>
+            <div class="sidebar__user-nav"><a class="sidebar__user-link" href="#!">Профиль</a><a class="sidebar__user-link" href="#!">Выход</a></div>
+          </div>
+        </div>
+        <div class="btn--block"><a class="btn btn--border" href="#">Заказать услуги</a></div>
+        <div class="sidebar__nav">
+          <div class="sidebar__nav-item sidebar__nav-item-active"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/edit.svg" alt="Мои заявки">Мои Заявки</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/crane.svg" alt="Парк техники и подписки">Парк техники и подписки</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/notice.svg" alt="Уведомления">Уведомления</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/chat.svg" alt="Сообщения">Сообщения</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/folder.svg" alt="Черный список">Черный список</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/support.svg" alt="Поддержка">Поддержка</a></div>
+        </div>
+      </div>
+      <div class="header">
+        <button class="btn btn--light header__burger" aria-label="show mobile menu"></button><a class="header__logo" href="#!"><img class="header__logo-img" src="img/icons/logo.svg" alt="logo"></a>
+      </div>
+
+
+      <div class="main-container">
+        <h1 class="main-title">Парк техники и подписки</h1>    
+
+        <form class="form" action="/" method="post">
+
+          <div class="choose_region_wrapp">           
+              <h3>Регионы оказания услуг</h3>
+              <div class="choose_region">
+                <button type="button" class="dropdown_btn" data-dropdown-btn = "drp_1">указать регион</button>
+                <div class="choose__dropdown" data-dropdown = "drp_1">
+                  <div class="title_3">
+                    <p>Отметьте регионы, в которых вы оказываете Услуги</p>
+                  </div>            
+                  <div class="single_ch"><input type="checkbox" id="ch_region_1" class="all_ch" data-ch-single="checkboxes_1"><label for="ch_region_1">Все</label></div>
+                  <div class="region_checkboxes_wrapp" data-ch="checkboxes_1">
+                    <div class="single_ch"><input type="checkbox" id="ch_region_2"><label for="ch_region_2">01 Республика Адыгея (Адыгея)</label></div>
+                    <div class="single_ch"><input type="checkbox" id="ch_region_3"><label for="ch_region_3">02 Республика Башкортостан</label></div>
+                    <div class="single_ch"><input type="checkbox" id="ch_region_4"><label for="ch_region_4">03 Республика Бурятия</label></div>
+                    <div class="single_ch"><input type="checkbox" id="ch_region_5"><label for="ch_region_5">04 Республика Алтай</label></div>
+                    <div class="single_ch"><input type="checkbox" id="ch_region_6"><label for="ch_region_6">05 Республика Дагестан</label></div>
+                    <div class="single_ch"><input type="checkbox" id="ch_region_7"><label for="ch_region_7">06 Республика Ингушетия</label></div>
+                    <div class="single_ch"><input type="checkbox" id="ch_region_8"><label for="ch_region_8">07 Кабардино-Балкарская Республика</label></div>
+                    <div class="single_ch"><input type="checkbox" id="ch_region_9"><label for="ch_region_9">08 Республика Калмыкия</label></div>
+                    <div class="single_ch"><input type="checkbox" id="ch_region_10"><label for="ch_region_10">09 Карачаево-Черкесская Республика</label></div>
+                    <div class="single_ch"><input type="checkbox" id="ch_region_11"><label for="ch_region_11">10 Республика Карелия</label></div>
+                    <div class="single_ch"><input type="checkbox" id="ch_region_12"><label for="ch_region_12">11 Республика Коми</label></div>
+                    <div class="single_ch"><input type="checkbox" id="ch_region_13"><label for="ch_region_13">12 Республика Марий Эл</label></div>
+                    <div class="single_ch"><input type="checkbox" id="ch_region_14"><label for="ch_region_14">13 Республика Мордовия</label></div>
+                    <div class="single_ch"><input type="checkbox" id="ch_region_15"><label for="ch_region_15">14 Республика Саха (Якутия)</label></div>
+                    <div class="single_ch"><input type="checkbox" id="ch_region_16"><label for="ch_region_16">15 Республика Северная Осетия - Алания</label></div>
+                    <div class="single_ch"><input type="checkbox" id="ch_region_17"><label for="ch_region_17">16 Республика Татарстан (Татарстан) </label></div>
+                    <div class="single_ch"><input type="checkbox" id="ch_region_18"><label for="ch_region_18">17 Республика Тыва</label></div>
+                    <div class="single_ch"><input type="checkbox" id="ch_region_19"><label for="ch_region_19">18 Удмуртская Республика</label></div>
+                    <div class="single_ch"><input type="checkbox" id="ch_region_20"><label for="ch_region_20">19 Республика Хакасия </label></div>
+                    <div class="single_ch"><input type="checkbox" id="ch_region_21"><label for="ch_region_21">20 Чеченская Республика</label></div>
+                    <div class="single_ch"><input type="checkbox" id="ch_region_22"><label for="ch_region_22">21 Чувашская Республика - Чувашия</label></div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="accordion accordion--open">
+
+              <h3 class="btn--accordion btn--arrow-down">Регионы оказания услуг</h3>
+
+              <div class="accordion__back">
+                <div class="input">
+                  <label class="input__label">Укажите регионы, в которых вы оказываете услуги</label>
+                  <input class="input__elem" type="text" name="name">
+                </div>
+
+                <div class="checkbox_wrapp">
+                  <label><input type="checkbox" name="ch_2"><span></span>Сохранить подписку на выбранные регионы</label>
+                </div>
+
+            </div>
+
+          </div>
+
+          <div class="accordion accordion--open">
+
+            <h3 class="btn--accordion btn--arrow-down">Добавить кран</h3>
+
+            <div class="accordion__back">
+
+              <div class="input">
+                <label class="input__label">Тип крана</label>
+                <select class="input__elem" name="type-tap">
+                  <option value="">Автомобильный с телескопической стрелой</option>
+                  <option value="">Тип 2</option>
+                  <option value="">Тип 3</option>
+                </select>
+              </div>
+
+              <div class="form--row">
+                <div class="input input--medium_1">
+                  <label class="input__label">Категория грузоподъемности</label>
+                  <select class="input__elem" name="category-tap">
+                    <option value="">от 200 до 300 тонн</option>
+                    <option value="">Категория 2</option>
+                    <option value="">Категория 3</option>
+                  </select>
+                </div>
+                <div class="input input--medium_2">
+                  <label class="input__label">Грузоподъёмность</label>
+                  <input class="input__elem" type="text" name="carrying">
+                </div>
+                <div class="input input--medium_3">
+                  <label class="input__label">Производитель</label>
+                  <input class="input__elem" type="text" name="carrying">
+                </div>
+              </div>
+
+              <div class="form--row">
+                <div class="input input--medium_1">
+                  <label class="input__label">Модель</label>
+                  <input class="input__elem" type="text" name="carrying">
+                </div>
+                <div class="input input--medium_2">
+                  <label class="input__label">Год выпуска</label>
+                  <input class="input__elem" type="text" name="carrying">
+                </div>
+                <div class="input_3">
+                  <label class="input__label">Файлы</label>
+                  <input class="input__file" id="attach-contact" type="file" name="attach-contact">
+                  <label class="input__file-label" for="attach-contact">прикрепить</label>
+                </div>
+              </div>
+
+              <div class="form--row">
+                <div class="input input_single">
+                  <label class="input__label">Дополнительные комментарии</label>
+                  <textarea class="input__elem" name="message-another" rows="4"></textarea>
+                </div>
+              </div>
+
+              <div class="form--row">
+                <button class="btn btn--submit btn--submit_2" type="submit">Добавить кран</button>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="accordion accordion--open noborder">
+
+            <h3 class="btn--accordion btn--arrow-down">Список кранов</h3>
+
+            <div class="accordion__back">
+
+              <div class="table_wrapp">
+                <div class="table_1">
+                  <table border="0" cellspacing="0" cellpadding="0">
+                     <tr>
+                      <th>
+                        <h3>№</h3>
+                        <button type="button" class="sort_btn"></button>
+                      </th>
+                      <th>
+                        <h3>Тип крана</h3>
+                        <button type="button" class="sort_btn"></button>
+                      </th> 
+                      <th>
+                        <h3>Категория грузоподъемности</h3>
+                        <button type="button" class="sort_btn"></button>
+                      </th>
+                      <th>
+                        <h3>Грузоподъёмность</h3>
+                        <button type="button" class="sort_btn"></button>
+                      </th>
+                      <th>
+                        <h3>Производитель</h3>
+                        <button type="button" class="sort_btn"></button>
+                      </th>
+                      <th>
+                        <h3>Модель</h3>
+                        <button type="button" class="sort_btn"></button>
+                      </th>
+                      <th>
+                        <h3>Год выпуска</h3>
+                        <button type="button" class="sort_btn"></button>
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>1</p>
+                      </td>
+                      <td>
+                        <p>Гусеничный с решетчатой стрелой</p>
+                      </td>
+                      <td>
+                        <p>от 500 до 750 тонн</p>
+                      </td>
+                      <td>
+                        <p>500</p>
+                      </td>
+                      <td>
+                        <p>Liebherr</p>
+                      </td>
+                      <td>
+                        <p>LTM-1250 6.1</p>
+                      </td>
+                      <td>
+                        <p>2016</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>2</p>
+                      </td>
+                      <td>
+                        <p>Автомобильный с телескопической стрелой</p>
+                      </td>
+                      <td>
+                        <p>от 200 до 300 тонн</p>
+                      </td>
+                      <td>
+                        <p>300</p>
+                      </td>
+                      <td>
+                        <p>Liebherr</p>
+                      </td>
+                      <td>
+                        <p>LTM-1250 6.1</p>
+                      </td>
+                      <td>
+                        <p>2016</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>1</p>
+                      </td>
+                      <td>
+                        <p>Гусеничный с решетчатой стрелой</p>
+                      </td>
+                      <td>
+                        <p>от 500 до 750 тонн</p>
+                      </td>
+                      <td>
+                        <p>500</p>
+                      </td>
+                      <td>
+                        <p>Liebherr</p>
+                      </td>
+                      <td>
+                        <p>LTM-1250 6.1</p>
+                      </td>
+                      <td>
+                        <p>2016</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>2</p>
+                      </td>
+                      <td>
+                        <p>Автомобильный с телескопической стрелой</p>
+                      </td>
+                      <td>
+                        <p>от 200 до 300 тонн</p>
+                      </td>
+                      <td>
+                        <p>300</p>
+                      </td>
+                      <td>
+                        <p>Liebherr</p>
+                      </td>
+                      <td>
+                        <p>LTM-1250 6.1</p>
+                      </td>
+                      <td>
+                        <p>2016</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>1</p>
+                      </td>
+                      <td>
+                        <p>Гусеничный с решетчатой стрелой</p>
+                      </td>
+                      <td>
+                        <p>от 500 до 750 тонн</p>
+                      </td>
+                      <td>
+                        <p>500</p>
+                      </td>
+                      <td>
+                        <p>Liebherr</p>
+                      </td>
+                      <td>
+                        <p>LTM-1250 6.1</p>
+                      </td>
+                      <td>
+                        <p>2016</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>2</p>
+                      </td>
+                      <td>
+                        <p>Автомобильный с телескопической стрелой</p>
+                      </td>
+                      <td>
+                        <p>от 200 до 300 тонн</p>
+                      </td>
+                      <td>
+                        <p>300</p>
+                      </td>
+                      <td>
+                        <p>Liebherr</p>
+                      </td>
+                      <td>
+                        <p>LTM-1250 6.1</p>
+                      </td>
+                      <td>
+                        <p>2016</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="pagination_wrapp">
+            <div class="col_1">
+              <h3>Показано 1-20 из 60 </h3>
+            </div>
+            <div class="col_2">
+              <ul class="pagination">
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__item footer__social">
+            <ul>
+              <li><a href="https://www.instagram.com/?hl=ru" target="_blank">Инстаграм</a></li>
+              <li><a href="https://www.vk.com" target="_blank">Вконтакте</a></li>
+              <li><a href="https://www.facebook.com" target="_blank">Фейсбук</a></li>
+              <li><a href="https://ru.linkedin.com/" target="_blank">Linkedin</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h3>Контакты</h3>
+            <ul>
+              <li><a href="tel:+7 967 1927021">Телефон: +7 967 1927021</a></li>
+              <li><a href="tel:+7 967 1927021">Whatsapp: +7 967 1927021</a></li>
+              <li><a href="mailto:info@mycrane.ru">info@mycrane.ru</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h3>О компании</h3>
+            <ul>
+              <li><a href="#!">Новости</a></li>
+              <li><a href="#!">Заказчикам</a></li>
+              <li><a href="#!">Исполнителям</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h3>Документы</h3>
+            <ul>
+              <li><a href="#!">Политика конфиденциальности</a></li>
+              <li><a href="#!">Договор оферты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cover"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

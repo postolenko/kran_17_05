@@ -1,0 +1,101 @@
+extends layouts/layout.pug
+
+block title
+    title Заказать грузоподъемные услуги | MyCrane
+
+block content
+    .main-container
+        h1.main-title Создание новой заявки
+
+        .tabs
+            .tabs__item
+                a.tabs__item-btn(href="main.html")  Заказать грузоподъёмные услуги
+
+            .tabs__item.tabs__item-active
+                .tabs__item-btn Заказать дополнительные услуги
+
+        form.form(action="/" method="post")
+            .tags
+                .tags__list
+                    .tags__item
+                        input.tags__item-input#tags-1(type="checkbox" name="tags-1")
+                        label.tags__item-label(for="tags-1") Подбор кранов, ППРк, проектирование
+
+                    .tags__item
+                        input.tags__item-input#tags-2(type="checkbox" name="tags-2")
+                        label.tags__item-label(for="tags-2") Грузозахватные приспособления
+
+                    .tags__item
+                        input.tags__item-input#tags-3(type="checkbox" name="tags-3")
+                        label.tags__item-label(for="tags-3") Запасные части и комплектующие
+
+                    .tags__item
+                        input.tags__item-input#tags-4(type="checkbox" name="tags-4")
+                        label.tags__item-label(for="tags-4") Лицензии и допуски
+
+            .input
+                label.input__label Название организации Заказчика*
+                input.input__elem(type="text" name="company")
+
+            .input
+                label.input__label ФИО*
+                input.input__elem(type="text" name="name")
+
+            .form--row
+                .input
+                    label.input__label Телефон*
+                    input.input__elem(type="text" name="tel")
+
+                .input
+                    label.input__label E-mail
+                    input.input__elem(type="text" name="email")
+
+                .input
+                    label.input__label Файлы
+
+                    input.input__file#files(type="file" name="files")
+                    label.input__file-label(for="files") прикрепить
+
+            .input
+                label.input__label Опишите Заявку
+                textarea.input__elem(name="message" rows="6")
+
+            .form--agree Принять условия <a href="#!">пользовательского соглашения</a> и
+
+            button.btn.btn--submit(type="submit") Опубликовать Заявку
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

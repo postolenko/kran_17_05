@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#000">
+    <title>Заказать грузоподъемные услуги | MyCrane</title>
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar__user"><img class="sidebar__user-img" src="img/icons/user.svg" alt="ООО “ХимСтрой”">
+          <div class="sidebar__user-info">
+            <div class="sidebar__user-title">ООО “ХимСтрой”</div>
+            <div class="sidebar__user-nav"><a class="sidebar__user-link" href="#!">Профиль</a><a class="sidebar__user-link" href="#!">Выход</a></div>
+          </div>
+        </div>
+        <div class="btn--block"><a class="btn btn--border" href="#">Заказать услуги</a></div>
+        <div class="sidebar__nav">
+          <div class="sidebar__nav-item sidebar__nav-item-active"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/edit.svg" alt="Мои заявки">Мои Заявки</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/crane.svg" alt="Парк техники и подписки">Парк техники и подписки</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/notice.svg" alt="Уведомления">Уведомления</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/chat.svg" alt="Сообщения">Сообщения</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/folder.svg" alt="Черный список">Черный список</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/support.svg" alt="Поддержка">Поддержка</a></div>
+        </div>
+      </div>
+      <div class="header">
+        <button class="btn btn--light header__burger" aria-label="show mobile menu"></button><a class="header__logo" href="#!"><img class="header__logo-img" src="img/icons/logo.svg" alt="logo"></a>
+      </div>
+      <div class="main-container">
+        <h1 class="main-title">Создание новой заявки</h1>
+        <div class="tabs">
+          <div class="tabs__item"><a class="tabs__item-btn" href="main.html"> Заказать грузоподъёмные услуги</a></div>
+          <div class="tabs__item tabs__item-active">
+            <div class="tabs__item-btn">Заказать дополнительные услуги</div>
+          </div>
+        </div>
+        <form class="form" action="/" method="post">
+          <div class="tags">
+            <div class="tags__list">
+              <div class="tags__item">
+                <input class="tags__item-input" id="tags-1" type="checkbox" name="tags-1">
+                <label class="tags__item-label" for="tags-1">Подбор кранов, ППРк, проектирование</label>
+              </div>
+              <div class="tags__item">
+                <input class="tags__item-input" id="tags-2" type="checkbox" name="tags-2">
+                <label class="tags__item-label" for="tags-2">Грузозахватные приспособления</label>
+              </div>
+              <div class="tags__item">
+                <input class="tags__item-input" id="tags-3" type="checkbox" name="tags-3">
+                <label class="tags__item-label" for="tags-3">Запасные части и комплектующие</label>
+              </div>
+              <div class="tags__item">
+                <input class="tags__item-input" id="tags-4" type="checkbox" name="tags-4">
+                <label class="tags__item-label" for="tags-4">Лицензии и допуски</label>
+              </div>
+            </div>
+          </div>
+          <div class="input">
+            <label class="input__label">Название организации Заказчика*</label>
+            <input class="input__elem" type="text" name="company">
+          </div>
+          <div class="input">
+            <label class="input__label">ФИО*</label>
+            <input class="input__elem" type="text" name="name">
+          </div>
+          <div class="form--row">
+            <div class="input">
+              <label class="input__label">Телефон*</label>
+              <input class="input__elem" type="text" name="tel">
+            </div>
+            <div class="input">
+              <label class="input__label">E-mail</label>
+              <input class="input__elem" type="text" name="email">
+            </div>
+            <div class="input">
+              <label class="input__label">Файлы</label>
+              <input class="input__file" id="files" type="file" name="files">
+              <label class="input__file-label" for="files">прикрепить</label>
+            </div>
+          </div>
+          <div class="input">
+            <label class="input__label">Опишите Заявку</label>
+            <textarea class="input__elem" name="message" rows="6"></textarea>
+          </div>
+          <div class="form--agree">Принять условия <a href="#!">пользовательского соглашения</a> и</div>
+          <button class="btn btn--submit" type="submit">Опубликовать Заявку</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__item footer__social">
+            <ul>
+              <li><a href="https://www.instagram.com/?hl=ru" target="_blank">Инстаграм</a></li>
+              <li><a href="https://www.vk.com" target="_blank">Вконтакте</a></li>
+              <li><a href="https://www.facebook.com" target="_blank">Фейсбук</a></li>
+              <li><a href="https://ru.linkedin.com/" target="_blank">Linkedin</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h3>Контакты</h3>
+            <ul>
+              <li><a href="tel:+7 967 1927021">Телефон: +7 967 1927021</a></li>
+              <li><a href="tel:+7 967 1927021">Whatsapp: +7 967 1927021</a></li>
+              <li><a href="mailto:info@mycrane.ru">info@mycrane.ru</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h3>О компании</h3>
+            <ul>
+              <li><a href="#!">Новости</a></li>
+              <li><a href="#!">Заказчикам</a></li>
+              <li><a href="#!">Исполнителям</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h3>Документы</h3>
+            <ul>
+              <li><a href="#!">Политика конфиденциальности</a></li>
+              <li><a href="#!">Договор оферты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cover"></div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

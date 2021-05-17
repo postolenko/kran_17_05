@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#000">
+    <title>Заказать дополнительные услуги | MyCrane</title>
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar__user"><img class="sidebar__user-img" src="img/icons/user.svg" alt="ООО “ХимСтрой”">
+          <div class="sidebar__user-info">
+            <div class="sidebar__user-title">ООО “ХимСтрой”</div>
+            <div class="sidebar__user-nav"><a class="sidebar__user-link" href="#!">Профиль</a><a class="sidebar__user-link" href="#!">Выход</a></div>
+          </div>
+        </div>
+        <div class="btn--block"><a class="btn btn--border" href="#">Заказать услуги</a></div>
+        <div class="sidebar__nav">
+          <div class="sidebar__nav-item sidebar__nav-item-active"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/edit.svg" alt="Мои заявки">Мои Заявки</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/crane.svg" alt="Парк техники и подписки">Парк техники и подписки</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/notice.svg" alt="Уведомления">Уведомления</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/chat.svg" alt="Сообщения">Сообщения</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/folder.svg" alt="Черный список">Черный список</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/support.svg" alt="Поддержка">Поддержка</a></div>
+        </div>
+      </div>
+      <div class="header">
+        <button class="btn btn--light header__burger" aria-label="show mobile menu"></button><a class="header__logo" href="#!"><img class="header__logo-img" src="img/icons/logo.svg" alt="logo"></a>
+      </div>
+      <div class="main-container">
+        <h1 class="main-title">Создание новой заявки</h1>
+        <div class="tabs">
+          <div class="tabs__item tabs__item-active">
+            <div class="tabs__item-btn">Заказать грузоподъёмные услуги</div>
+          </div>
+          <div class="tabs__item"><a class="tabs__item-btn" href="request-2.html">Заказать дополнительные услуги</a></div>
+        </div>
+        <form class="form" action="/" method="post">
+          <div class="tags">
+            <div class="tags__list">
+              <div class="tags__item">
+                <input class="tags__item-input" id="tags-1" type="checkbox" name="tags-1">
+                <label class="tags__item-label" for="tags-1">Финальный запрос</label>
+              </div>
+              <div class="tags__item">
+                <input class="tags__item-input" id="tags-2" type="checkbox" name="tags-2">
+                <label class="tags__item-label" for="tags-2">Срочно</label>
+              </div>
+            </div>
+          </div>
+          <div class="input">
+            <label class="input__label">Название проекта/объекта, где будут оказываться услуги</label>
+            <input class="input__elem" type="text" name="name">
+          </div>
+          <div class="input">
+            <label class="input__label">Собственник проекта/объекта, где будут оказываться услуги</label>
+            <input class="input__elem" type="text" name="owner">
+          </div>
+          <div class="input">
+            <label class="input__label">Наименование организации</label>
+            <input class="input__elem" type="text" name="company">
+          </div>
+          <div class="input">
+            <label class="input__label">Регион</label>
+            <div class="input--icon">
+              <div class="icon icon--location"></div>
+              <select class="input__elem" name="region">
+                <option value="">Москва</option>
+                <option value="">Омск</option>
+                <option value="">Люблино</option>
+                <option value="">Новосибирск</option>
+              </select>
+            </div>
+          </div>
+          <div class="input">
+            <label class="input__label">Ближайший населенный пункт</label>
+            <input class="input__elem" type="text" name="location">
+          </div>
+          <div class="form--row">
+            <div class="input">
+              <label class="input__label">Район</label>
+              <input class="input__elem" type="text" name="district">
+            </div>
+            <div class="input">
+              <label class="input__label">Улица</label>
+              <input class="input__elem" type="text" name="street">
+            </div>
+            <div class="input input--tiny">
+              <label class="input__label">Дом</label>
+              <input class="input__elem" type="text" name="house">
+            </div>
+          </div>
+          <div class="input input--row">
+            <label class="input__label">Ввести координаты</label>
+            <input class="input__elem" type="text" name="coordinates">
+            <button class="btn btn--dark btn--location">показать точку на карте</button>
+          </div>
+          <div class="input input--medium">
+            <label class="input__label">Срок предоставления ткп</label>
+            <div class="input--icon">
+              <div class="icon icon--date"></div>
+              <input class="input__elem" type="text" placeholder="Дата начала" onfocus="(this.type='date')" name="term">
+            </div>
+          </div>
+          <div class="input input--tiny">
+            <label class="input__label">Кол-во кранов</label>
+            <select class="input__elem" name="taps">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+            </select>
+          </div>
+          <div class="accordion accordion--open">
+            <h2 class="btn--accordion btn--arrow-down">Кран №1</h2>
+            <div class="accordion__back">
+              <div class="form--row">
+                <div class="input">
+                  <label class="input__label">Тип крана</label>
+                  <select class="input__elem" name="type-tap">
+                    <option value="">Автомобильный с телескопической стрелой</option>
+                    <option value="">Тип 2</option>
+                    <option value="">Тип 3</option>
+                  </select>
+                </div>
+                <div class="input">
+                  <label class="input__label">Категория грузоподъемности крана</label>
+                  <select class="input__elem" name="category-tap">
+                    <option value="">от 50 до 750 тонн</option>
+                    <option value="">Категория 2</option>
+                    <option value="">Категория 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form--row">
+                <div class="input input--medium">
+                  <label class="input__label">Грузоподъёмность ГПМ, тонн</label>
+                  <input class="input__elem" type="text" name="carrying">
+                </div>
+                <div class="input input--medium">
+                  <label class="input__label">Наименование ГПМ</label>
+                  <select class="input__elem" name="name-GPM">
+                    <option value="">Liebherr LTM-1250-6.1</option>
+                    <option value="">Наиименование 2</option>
+                    <option value="">Наименование 3</option>
+                  </select>
+                </div>
+                <div class="input input--medium">
+                  <label class="input__label">Конфигурация ГПМ</label>
+                  <select class="input__elem" name="config-GPM">
+                    <option value="">TVNZK</option>
+                    <option value="">Конфигурация 2</option>
+                    <option value="">Конфигурация 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form--row">
+                <div class="input input--medium">
+                  <label class="input__label">Дата начала</label>
+                  <div class="input--icon">
+                    <div class="icon icon--date"></div>
+                    <input class="input__elem" type="text" placeholder="08.00 ДД/ММ/ГГ" onfocus="(this.type='datetime-local')" name="date-start">
+                  </div>
+                </div>
+                <div class="input input--medium">
+                  <label class="input__label">Дата окончания</label>
+                  <div class="input--icon">
+                    <div class="icon icon--date"></div>
+                    <input class="input__elem" type="text" placeholder="08.00 ДД/ММ/ГГ" onfocus="(this.type='datetime-local')" name="date-end">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion accordion--open">
+            <h3 class="btn--accordion btn--arrow-down">Режим работы</h3>
+            <div class="accordion__back">
+              <div class="form--row">
+                <div class="input">
+                  <label class="input__label">Дней оказания услуг в неделю</label>
+                  <select class="input__elem" name="services-days">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                  </select>
+                </div>
+                <div class="input">
+                  <label class="input__label">Смен оказания услуг в сутки</label>
+                  <select class="input__elem" name="change-days">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form--row">
+                <div class="input input--medium">
+                  <label class="input__label">Дата начала простоя</label>
+                  <div class="input--icon">
+                    <div class="icon icon--date"></div>
+                    <input class="input__elem" type="text" placeholder="08.00 ДД/ММ/ГГ" onfocus="(this.type='datetime-local')" name="date-start-plain">
+                  </div>
+                </div>
+                <div class="input input--medium">
+                  <label class="input__label">Дата окончания простоя</label>
+                  <div class="input--icon">
+                    <div class="icon icon--date"></div>
+                    <input class="input__elem" type="text" placeholder="08.00 ДД/ММ/ГГ" onfocus="(this.type='datetime-local')" name="date-end-plain">
+                  </div>
+                </div>
+              </div>
+              <div class="input">
+                <label class="input__label">Общее предполагаемое количество часов простоя</label>
+                <input class="input__elem" type="text" name="amount-plain">
+              </div>
+              <div class="input">
+                <label class="input__label">Общее предполагаемое количество часов оказания услуг</label>
+                <input class="input__elem" type="text" name="amount-services">
+              </div>
+            </div>
+          </div>
+          <div class="accordion accordion--open">
+            <h3 class="btn--accordion btn--arrow-down">Дополнительная информация</h3>
+            <div class="accordion__back">
+              <div class="form--row form--row-wide">
+                <div class="input">
+                  <label class="input__label">Валюта подачи предложения и договора</label>
+                  <select class="input__elem" name="currency">
+                    <option value="">российские рубли</option>
+                    <option value="">Валюта 2</option>
+                    <option value="">Валюта 3</option>
+                  </select>
+                </div>
+                <div class="input">
+                  <label class="input__label">Условия платежей</label>
+                  <select class="input__elem" name="payment-terms">
+                    <option value="">мобилизация – аванс</option>
+                    <option value="">Условия платежей 2</option>
+                    <option value="">Условия платежей 3</option>
+                  </select>
+                </div>
+                <div class="input">
+                  <label class="input__label">Проект договора</label>
+                  <input class="input__file" id="attach-contact" type="file" name="attach-contact">
+                  <label class="input__file-label" for="attach-contact">прикрепить</label>
+                </div>
+              </div>
+              <div class="input">
+                <label class="input__label">Другое</label>
+                <textarea class="input__elem" name="message-another" rows="6"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="accordion">
+            <h3 class="btn--accordion btn--arrow-down">Техническая информация</h3>
+            <div class="accordion__back">
+              <p>Текст (в дизайне его нет)</p>
+            </div>
+          </div>
+          <div class="accordion accordion--open">
+            <h3 class="btn--accordion btn--arrow-down">Ответственность сторон</h3>
+            <div class="accordion__back">
+              <div class="table-plan">
+                <div class="table-plan__header">
+                  <div class="table-plan__col"></div>
+                  <div class="table-plan__col">Заказчик</div>
+                  <div class="table-plan__col">Исполнитель</div>
+                </div>
+                <div class="table-plan__row">
+                  <div class="table-plan__col">Разработка Проекта производства работ кранами (ППРк)</div>
+                  <div class="table-plan__col">
+                    <input class="input__radio" id="radio-1-1" type="radio" name="radio-1">
+                    <label class="input__radio-label" for="radio-1-1"></label>
+                  </div>
+                  <div class="table-plan__col">
+                    <input class="input__radio" id="radio-1-2" type="radio" name="radio-1">
+                    <label class="input__radio-label" for="radio-1-2"></label>
+                  </div>
+                </div>
+                <div class="table-plan__row">
+                  <div class="table-plan__col">Подготовка подъездных путей и площадки под сборку, переезд, работу и разборку кранов, а также их содержание</div>
+                  <div class="table-plan__col">
+                    <input class="input__radio" id="radio-2-1" type="radio" name="radio-2">
+                    <label class="input__radio-label" for="radio-2-1"></label>
+                  </div>
+                  <div class="table-plan__col">
+                    <input class="input__radio" id="radio-2-2" type="radio" name="radio-2">
+                    <label class="input__radio-label" for="radio-2-2"></label>
+                  </div>
+                </div>
+                <div class="table-plan__row">
+                  <div class="table-plan__col">Обеспечение и оплата проживания персонала Исполнителя</div>
+                  <div class="table-plan__col">
+                    <input class="input__radio" id="radio-3-1" type="radio" name="radio-3">
+                    <label class="input__radio-label" for="radio-3-1"></label>
+                  </div>
+                  <div class="table-plan__col">
+                    <input class="input__radio" id="radio-3-2" type="radio" name="radio-3">
+                    <label class="input__radio-label" for="radio-3-2"></label>
+                  </div>
+                </div>
+                <div class="table-plan__row">
+                  <div class="table-plan__col">Стропальщики для крепления/раскрепления поднимаемых грузов</div>
+                  <div class="table-plan__col">
+                    <input class="input__radio" id="radio-4-1" type="radio" name="radio-4">
+                    <label class="input__radio-label" for="radio-4-1"></label>
+                  </div>
+                  <div class="table-plan__col">
+                    <input class="input__radio" id="radio-4-2" type="radio" name="radio-4">
+                    <label class="input__radio-label" for="radio-4-2"></label>
+                  </div>
+                </div>
+                <div class="table-plan__row">
+                  <div class="table-plan__col">Перемещение кранов Исполнителя на объекте (при необходимости)</div>
+                  <div class="table-plan__col">
+                    <input class="input__radio" id="radio-5-1" type="radio" name="radio-5">
+                    <label class="input__radio-label" for="radio-5-1"></label>
+                  </div>
+                  <div class="table-plan__col">
+                    <input class="input__radio" id="radio-5-2" type="radio" name="radio-5">
+                    <label class="input__radio-label" for="radio-5-2"></label>
+                  </div>
+                </div>
+                <div class="table-plan__row">
+                  <div class="table-plan__col">Обеспечение топливом необходимым для работы кранов Исполнителя</div>
+                  <div class="table-plan__col">
+                    <input class="input__radio" id="radio-6-1" type="radio" name="radio-6">
+                    <label class="input__radio-label" for="radio-6-1"></label>
+                  </div>
+                  <div class="table-plan__col">
+                    <input class="input__radio" id="radio-6-2" type="radio" name="radio-6">
+                    <label class="input__radio-label" for="radio-6-2"></label>
+                  </div>
+                </div>
+                <div class="table-plan__row">
+                  <div class="table-plan__col">Грузозахватные приспособления (ГЗП) для строповки поднимаемых грузов</div>
+                  <div class="table-plan__col">
+                    <input class="input__radio" id="radio-7-1" type="radio" name="radio-7">
+                    <label class="input__radio-label" for="radio-7-1"></label>
+                  </div>
+                  <div class="table-plan__col">
+                    <input class="input__radio" id="radio-7-2" type="radio" name="radio-7">
+                    <label class="input__radio-label" for="radio-7-2"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input">
+            <label class="input__label">Дополнительные комментарии Заказчика:</label>
+            <textarea class="input__elem" name="message" rows="6"></textarea>
+          </div>
+          <div class="form--agree">Принять условия <a href="#!">пользовательского соглашения</a> и</div>
+          <button class="btn btn--submit" type="submit">Опубликовать Заявку</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__item footer__social">
+            <ul>
+              <li><a href="https://www.instagram.com/?hl=ru" target="_blank">Инстаграм</a></li>
+              <li><a href="https://www.vk.com" target="_blank">Вконтакте</a></li>
+              <li><a href="https://www.facebook.com" target="_blank">Фейсбук</a></li>
+              <li><a href="https://ru.linkedin.com/" target="_blank">Linkedin</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h3>Контакты</h3>
+            <ul>
+              <li><a href="tel:+7 967 1927021">Телефон: +7 967 1927021</a></li>
+              <li><a href="tel:+7 967 1927021">Whatsapp: +7 967 1927021</a></li>
+              <li><a href="mailto:info@mycrane.ru">info@mycrane.ru</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h3>О компании</h3>
+            <ul>
+              <li><a href="#!">Новости</a></li>
+              <li><a href="#!">Заказчикам</a></li>
+              <li><a href="#!">Исполнителям</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h3>Документы</h3>
+            <ul>
+              <li><a href="#!">Политика конфиденциальности</a></li>
+              <li><a href="#!">Договор оферты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cover"></div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

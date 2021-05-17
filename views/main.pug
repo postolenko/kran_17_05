@@ -1,0 +1,346 @@
+extends layouts/layout.pug
+
+block title
+    title Заказать дополнительные услуги | MyCrane
+
+block content
+    .main-container
+        h1.main-title Создание новой заявки
+
+        .tabs
+            .tabs__item.tabs__item-active
+                .tabs__item-btn Заказать грузоподъёмные услуги
+
+            .tabs__item
+                a.tabs__item-btn(href="request-2.html") Заказать дополнительные услуги
+
+        form.form(action="/" method="post")
+            .tags
+                .tags__list
+                    .tags__item
+                        input.tags__item-input#tags-1(type="checkbox" name="tags-1")
+                        label.tags__item-label(for="tags-1") Финальный запрос
+
+                    .tags__item
+                        input.tags__item-input#tags-2(type="checkbox" name="tags-2")
+                        label.tags__item-label(for="tags-2") Срочно
+
+            .input
+                label.input__label Название проекта/объекта, где будут оказываться услуги
+                input.input__elem(type="text" name="name")
+
+            .input
+                label.input__label Собственник проекта/объекта, где будут оказываться услуги
+                input.input__elem(type="text" name="owner")
+
+            .input
+                label.input__label Наименование организации
+                input.input__elem(type="text" name="company")
+
+            .input
+                label.input__label Регион
+
+                .input--icon
+                    .icon.icon--location
+
+                    select.input__elem(name="region")
+                        option(value="") Москва
+                        option(value="") Омск
+                        option(value="") Люблино
+                        option(value="") Новосибирск
+
+            .input
+                label.input__label Ближайший населенный пункт
+                input.input__elem(type="text" name="location")
+
+            .form--row
+                .input
+                    label.input__label Район
+                    input.input__elem(type="text" name="district")
+
+                .input
+                    label.input__label Улица
+                    input.input__elem(type="text" name="street")
+
+                .input.input--tiny
+                    label.input__label Дом
+                    input.input__elem(type="text" name="house")
+
+            .input.input--row
+                label.input__label Ввести координаты
+                input.input__elem(type="text" name="coordinates")
+
+                button.btn.btn--dark.btn--location показать точку на карте
+
+            .input.input--medium
+                label.input__label Срок предоставления ткп
+
+                .input--icon
+                    .icon.icon--date
+
+                    input.input__elem(type="text" placeholder="Дата начала" onfocus="(this.type='date')" name="term")
+
+            .input.input--tiny
+                label.input__label Кол-во кранов
+                select.input__elem(name="taps")
+                    option(value="") 1
+                    option(value="") 2
+                    option(value="") 3
+
+            .accordion.accordion--open
+                h2.btn--accordion.btn--arrow-down Кран №1
+
+                .accordion__back
+                    .form--row
+                        .input
+                            label.input__label Тип крана
+                            select.input__elem(name="type-tap")
+                                option(value="") Автомобильный с телескопической стрелой
+                                option(value="") Тип 2
+                                option(value="") Тип 3
+
+                        .input
+                            label.input__label Категория грузоподъемности крана
+                            select.input__elem(name="category-tap")
+                                option(value="") от 50 до 750 тонн
+                                option(value="") Категория 2
+                                option(value="") Категория 3
+
+                    .form--row
+                        .input.input--medium
+                            label.input__label Грузоподъёмность ГПМ, тонн
+                            input.input__elem(type="text" name="carrying")
+
+                        .input.input--medium
+                            label.input__label Наименование ГПМ
+                            select.input__elem(name="name-GPM")
+                                option(value="") Liebherr LTM-1250-6.1
+                                option(value="") Наиименование 2
+                                option(value="") Наименование 3
+
+                        .input.input--medium
+                            label.input__label Конфигурация ГПМ
+                            select.input__elem(name="config-GPM")
+                                option(value="") TVNZK
+                                option(value="") Конфигурация 2
+                                option(value="") Конфигурация 3
+
+                    .form--row
+                        .input.input--medium
+                            label.input__label Дата начала
+
+                            .input--icon
+                                .icon.icon--date
+
+                                input.input__elem(type="text" placeholder="08.00 ДД/ММ/ГГ" onfocus="(this.type='datetime-local')" name="date-start")
+
+                        .input.input--medium
+                            label.input__label Дата окончания
+
+                            .input--icon
+                                .icon.icon--date
+
+                                input.input__elem(type="text" placeholder="08.00 ДД/ММ/ГГ" onfocus="(this.type='datetime-local')" name="date-end")
+
+            .accordion.accordion--open
+                h3.btn--accordion.btn--arrow-down Режим работы
+
+                .accordion__back
+                    .form--row
+                        .input
+                            label.input__label Дней оказания услуг в неделю
+                            select.input__elem(name="services-days")
+                                option(value="") 1
+                                option(value="") 2
+                                option(value="") 3
+
+                        .input
+                            label.input__label Смен оказания услуг в сутки
+                            select.input__elem(name="change-days")
+                                option(value="") 1
+                                option(value="") 2
+                                option(value="") 3
+
+                    .form--row
+                        .input.input--medium
+                            label.input__label Дата начала простоя
+
+                            .input--icon
+                                .icon.icon--date
+
+                                input.input__elem(type="text" placeholder="08.00 ДД/ММ/ГГ" onfocus="(this.type='datetime-local')" name="date-start-plain")
+
+                        .input.input--medium
+                            label.input__label Дата окончания простоя
+
+                            .input--icon
+                                .icon.icon--date
+
+                                input.input__elem(type="text" placeholder="08.00 ДД/ММ/ГГ" onfocus="(this.type='datetime-local')" name="date-end-plain")
+
+                    .input
+                        label.input__label Общее предполагаемое количество часов простоя
+                        input.input__elem(type="text" name="amount-plain")
+
+                    .input
+                        label.input__label Общее предполагаемое количество часов оказания услуг
+                        input.input__elem(type="text" name="amount-services")
+
+            .accordion.accordion--open
+                h3.btn--accordion.btn--arrow-down Дополнительная информация
+
+                .accordion__back
+                    .form--row.form--row-wide
+                        .input
+                            label.input__label Валюта подачи предложения и договора
+                            select.input__elem(name="currency")
+                                option(value="") российские рубли
+                                option(value="") Валюта 2
+                                option(value="") Валюта 3
+
+                        .input
+                            label.input__label Условия платежей
+                            select.input__elem(name="payment-terms")
+                                option(value="") мобилизация – аванс
+                                option(value="") Условия платежей 2
+                                option(value="") Условия платежей 3
+
+                        .input
+                            label.input__label Проект договора
+
+                            input.input__file#attach-contact(type="file" name="attach-contact")
+                            label.input__file-label(for="attach-contact") прикрепить
+
+                    .input
+                        label.input__label Другое
+                        textarea.input__elem(name="message-another" rows="6")
+
+            .accordion
+                h3.btn--accordion.btn--arrow-down Техническая информация
+
+                .accordion__back
+                        p Текст (в дизайне его нет)
+
+            .accordion.accordion--open
+                h3.btn--accordion.btn--arrow-down Ответственность сторон
+
+                .accordion__back
+                    .table-plan
+                        .table-plan__header
+                            .table-plan__col
+                            .table-plan__col Заказчик
+                            .table-plan__col Исполнитель
+
+                        .table-plan__row
+                            .table-plan__col Разработка Проекта производства работ кранами (ППРк)
+                            .table-plan__col
+                                input.input__radio#radio-1-1(type="radio" name="radio-1")
+                                label.input__radio-label(for="radio-1-1")
+
+                            .table-plan__col
+                                input.input__radio#radio-1-2(type="radio" name="radio-1")
+                                label.input__radio-label(for="radio-1-2")
+
+                        .table-plan__row
+                            .table-plan__col Подготовка подъездных путей и площадки под сборку, переезд, работу и разборку кранов, а также их содержание
+                            .table-plan__col
+                                input.input__radio#radio-2-1(type="radio" name="radio-2")
+                                label.input__radio-label(for="radio-2-1")
+
+                            .table-plan__col
+                                input.input__radio#radio-2-2(type="radio" name="radio-2")
+                                label.input__radio-label(for="radio-2-2")
+
+                        .table-plan__row
+                            .table-plan__col Обеспечение и оплата проживания персонала Исполнителя
+                            .table-plan__col
+                                input.input__radio#radio-3-1(type="radio" name="radio-3")
+                                label.input__radio-label(for="radio-3-1")
+
+                            .table-plan__col
+                                input.input__radio#radio-3-2(type="radio" name="radio-3")
+                                label.input__radio-label(for="radio-3-2")
+
+                        .table-plan__row
+                            .table-plan__col Стропальщики для крепления/раскрепления поднимаемых грузов
+                            .table-plan__col
+                                input.input__radio#radio-4-1(type="radio" name="radio-4")
+                                label.input__radio-label(for="radio-4-1")
+
+                            .table-plan__col
+                                input.input__radio#radio-4-2(type="radio" name="radio-4")
+                                label.input__radio-label(for="radio-4-2")
+
+                        .table-plan__row
+                            .table-plan__col Перемещение кранов Исполнителя на объекте (при необходимости)
+                            .table-plan__col
+                                input.input__radio#radio-5-1(type="radio" name="radio-5")
+                                label.input__radio-label(for="radio-5-1")
+
+                            .table-plan__col
+                                input.input__radio#radio-5-2(type="radio" name="radio-5")
+                                label.input__radio-label(for="radio-5-2")
+
+                        .table-plan__row
+                            .table-plan__col Обеспечение топливом необходимым для работы кранов Исполнителя
+                            .table-plan__col
+                                input.input__radio#radio-6-1(type="radio" name="radio-6")
+                                label.input__radio-label(for="radio-6-1")
+
+                            .table-plan__col
+                                input.input__radio#radio-6-2(type="radio" name="radio-6")
+                                label.input__radio-label(for="radio-6-2")
+
+                        .table-plan__row
+                            .table-plan__col Грузозахватные приспособления (ГЗП) для строповки поднимаемых грузов
+                            .table-plan__col
+                                input.input__radio#radio-7-1(type="radio" name="radio-7")
+                                label.input__radio-label(for="radio-7-1")
+
+                            .table-plan__col
+                                input.input__radio#radio-7-2(type="radio" name="radio-7")
+                                label.input__radio-label(for="radio-7-2")
+
+            .input
+                label.input__label Дополнительные комментарии Заказчика:
+                textarea.input__elem(name="message" rows="6")
+
+            .form--agree Принять условия <a href="#!">пользовательского соглашения</a> и
+
+            button.btn.btn--submit(type="submit") Опубликовать Заявку
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
