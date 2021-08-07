@@ -103,5 +103,18 @@
     parent.remove();
   });
 
+  // ---------------
+  var tabCount, zIndex;
+  $(".tabs_3_links").each(function() {
+    tab = $(this).find(".tab_3");
+    tabCount = tab.length;
+    tab.each(function() {
+      $(this).css({
+        "z-index" : tabCount
+      });
+      tabCount = tabCount - 1;   
+    });
+  });
+
 })(jQuery);
 

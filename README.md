@@ -5,3 +5,6 @@
 # http://postolenko.github.io/kran/messages.html
 # http://postolenko.github.io/kran/info_chat.html
 # http://postolenko.github.io/kran/profile_info.html
+# http://postolenko.github.io/kran/my_add_crane.html
+# http://postolenko.github.io/kran/my_add_crane_2.html
+# http://postolenko.github.io/kran/my_add_crane_3.html
