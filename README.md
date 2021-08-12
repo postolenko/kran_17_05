@@ -8,3 +8,4 @@
 # http://postolenko.github.io/kran_17_05/my_add_crane.html
 # http://postolenko.github.io/kran_17_05/my_add_crane_2.html
 # http://postolenko.github.io/kran_17_05/my_add_crane_3.html
+# http://postolenko.github.io/kran_17_05/my_vacancies.html

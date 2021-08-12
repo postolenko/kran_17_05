@@ -1427,7 +1427,58 @@
 
 /*-- /Section 1 - Add Crane --*/
 
+/*-- Section 1 - My Vacansies --*/
 
+.vacansies_wrapp {
+	padding: 0 28px 100px 28px;
+	border-left: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.vacansie_item {
+	display: flex;
+	display: -webkit-flex;
+	border-bottom: 1px solid #ececec;
+	padding: 26px 0 22px 0;
+}
+
+.vacansies_wrapp .vacansie_item:last-child {
+	border-bottom: none;
+}
+
+.vacansie_item >.col_1 {
+	width: calc(100% - 250px);
+	padding-right: 10px;
+}
+
+.vacansie_item >.col_1 .full_height_wrapp .inner_height {
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.vacansie_item >.col_2 {
+    width: 250px;
+}
+
+.vacansie_item >.col_1 h3 {
+    margin-bottom: 9px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	color: #000;
+}
+
+.vacansie_item >.col_1 p {
+	margin: 0;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000;
+}
+
+
+/*-- /Section 1 - My Vacansies --*/
 
 
 
@@ -1647,13 +1698,42 @@
 	    text-align: left;
 	}
 
-	.two_cols_2 > div:nth-child(2) {
+	.add_cr_item .two_cols_2 > div:nth-child(2) {
 		position: absolute;
 		top: 20px;
 		right: 0;
 	}
 
 	/*-- /Section 1 - Add Crane --*/
+
+	/*-- Section 1 - My Vacansies --*/
+
+	.vacansie_item {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	    padding: 20px 0 16px 0;
+	}
+
+	.vacansie_item >.col_1 {
+	    width: 100%;
+	    padding-right: 0;
+	    padding-bottom: 10px;
+	}
+
+	.vacansie_item >.col_2 {
+	    width: 100%;
+	}
+
+	.vacansie_item >.col_1 .full_height_wrapp .inner_height {
+	    text-align: left;
+	    padding-bottom: 10px;
+	}
+
+	.vacansie_item .date_wrapp {
+		padding-top: 15px;
+	}
+
+	/*-- /Section 1 - My Vacansies --*/
 
 }
 
