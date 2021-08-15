@@ -1429,6 +1429,14 @@
 
 /*-- Section 1 - My Vacansies --*/
 
+.btn_blocks_wrapp {
+    padding: 28px 0 22px 0;
+}
+
+.sidebar .btn--block_2 {
+	padding: 5px 28px 5px 28px; 
+}
+
 .vacansies_wrapp {
 	padding: 0 28px 100px 28px;
 	border-left: 1px solid #e5e5e5;
