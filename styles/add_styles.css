@@ -2208,3 +2208,157 @@
 }
 
 /*-- /Чат --*/
+
+/*-- User Vacansy --*/
+
+.btn_blocks_wrapp_2 {
+	padding-bottom: 34px;
+}
+
+.sidebar .btn--block_3 {
+    padding: 7px 28px;
+}
+
+.sidebar .btn--block_2 + .btn--block_3 {
+	padding-top: 9px;
+}
+
+.btn_border_3 {
+	font-size: 14px;
+	line-height: 18px;
+	height: auto;
+	min-height: 30px;
+}
+
+.resume_templ {
+	display: flex;
+	display: -webkit-flex;
+	padding: 0 20px 100px 23px;
+}
+
+.resume_templ > .left_col {
+	width: calc(100% - 230px);
+	padding-right: 10px;
+}
+
+.resume_templ > .right_col {
+	width: 230px;
+	padding-left: 10px;
+}
+
+.resume_row {
+	padding: 15px 0 19px 0;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.resume_row:last-child {
+	border-bottom: none;
+}
+
+.resume_row_2 {
+	padding-bottom: 12px;
+}
+
+.user_2_3 > div:nth-child(2) h3 {
+	margin-bottom: 2px;
+}
+
+.resume_item {
+	display: flex;
+	display: -webkit-flex;
+	width: 100%;
+	margin: 2px 0;
+}
+
+.resume_item > div:nth-child(1) {
+	width: 145px;
+	padding-right: 10px;
+}
+
+.resume_item > div:nth-child(2) {
+	width: calc(100% - 145px);
+	padding-left: 10px;
+}
+
+.resume_item p {
+	margin: 0;
+	font-size: 15px;
+	color: #000;
+}
+
+.resume_item > div:nth-child(2) p {
+	font-weight: 600;
+}
+
+.add_photo {
+	display: block;
+	cursor: pointer;
+	margin: 20px 0 20px 0;
+	padding: 10px 25px 1px 25px;
+	border: 1px solid rgb(255, 211, 0);
+	background-color: rgb(255, 255, 255);
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	position: relative;
+	text-align: center;
+}
+
+.add_photo input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.photo_icon_2 {
+	display: block;
+	width: 80px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.add_photo h3 {
+	margin: 13px 0;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 600;
+	color: #000;
+}
+
+.add_photo p {
+	margin: 13px 0;
+	font-size: 12px;
+	line-height: 16px;
+	color: #000;
+}
+
+@media only screen and (max-width: 650px) {
+
+	.resume_templ {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.resume_templ > .left_col {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.resume_templ > .right_col {
+	    width: 100%;
+	    padding-left: 0;
+	}
+
+	.resume_item > div:nth-child(1) {
+	    width: 130px;
+	}
+
+	.resume_item > div:nth-child(2) {
+	    width: calc(100% - 130px);
+	}
+
+}
+
+/*-- /User Vacansy --*/
