@@ -144,12 +144,16 @@
             </div>
           </div>
           <div class="right_col">
-            <label class="add_photo" for="file_resume_photo">
-              <input type="file" id="file_resume_photo" />
-              <img class="photo_icon_2" src="img/photo_icon.svg" alt="" />
-              <h3>Добавьте ваше фото</h3>
-              <p>Это повысит доверие покупателей и сделает ваши объявление привлекательнее</p>
-            </label>
+          	<form runat="server">
+	            <label class="add_photo" for="imgInp">
+	              <input accept="img/*" type="file" id="imgInp" />
+	              <div class="photo_icon_2_wrapp">
+		              <img id="blah" class="photo_icon_2" src="img/photo_icon.svg" alt="" />
+		          </div>
+	              <h3>Добавьте ваше фото</h3>
+	              <p>Это повысит доверие покупателей и сделает ваши объявление привлекательнее</p>
+	            </label>
+	        </form>
           </div>
         </div>
 
