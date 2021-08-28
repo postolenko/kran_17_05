@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#000">
+    <title>Заказать грузоподъемные услуги | MyCrane</title>
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/add_styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar__user"><img class="sidebar__user-img" src="img/icons/user.svg" alt="ООО “ХимСтрой”">
+          <div class="sidebar__user-info">
+            <div class="sidebar__user-title">MyСrane</div>
+            <div class="sidebar__user-nav"><a class="sidebar__user-link" href="#!">Профиль</a><a class="sidebar__user-link" href="#!">Выход</a></div>
+          </div>
+        </div>
+        <div class="btn_blocks_wrapp">
+          <div class="btn--block btn--block_2">
+            <a class="btn btn--border" href="#">Подать объявление</a>
+          </div>
+          <div class="btn--block btn--block_2">
+            <a class="btn btn--border" href="#">Подать вакансию</a>
+          </div>
+        </div>
+        <div class="sidebar__nav">
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/edit.svg" alt="Мои заявки">Мои объявления</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/vacansies.svg" alt="Парк техники и подписки">Мои вакансии</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/chat.svg" alt="Сообщения">Сообщения</a></div>
+          <div class="sidebar__nav-item sidebar__nav-item-active"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/wallet.svg" alt="Черный список">Кошелек</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/settings.svg" alt="Поддержка">Настройки</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/support.svg" alt="Поддержка">Поддержка</a></div>
+        </div>
+      </div>
+      <div class="header">
+        <button class="btn btn--light header__burger" aria-label="show mobile menu"></button><a class="header__logo" href="#!"><img class="header__logo-img" src="img/icons/logo.svg" alt="logo"></a>
+      </div>
+      <div class="main-container">
+         <!-- Section 1 - Wallet -->
+         <h1 class="main-title no_border">Кошелек</h1>
+         <div class="wallet_wrapp">
+
+            <div class="wallet_item">
+                <div class="wallet_two_cols">
+                  <div class="left_col">
+                    <div class="wallet_balance_wrapp">
+                      <h3>Баланс кошелька</h3>
+                      <p class="wallet_balance">1 200 ₽</p>
+                    </div>
+                  </div>
+                  <div class="right_col">
+                    <form>
+                      <div class="repl_templ">
+                        <div>
+                          <div class="yellow_input">
+                            <input type="number" placeholder="1000 ₽" />
+                          </div>
+                        </div>
+                        <div>
+                          <button type="submit" class="yellow_pill">Пополнить</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            </div>
+
+            <div class="wallet_item">
+              <div class="add_link_single">
+                <div class="add_link">
+                  <div>
+                    <p>Банковские карты</p>
+                  </div>
+                  <div>
+                    <button type="button" class="plus_btn"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wallet_item">
+              <div class="wallet_item_title">
+                <h3>Онлайн платежи</h3>
+              </div>
+              <div class="add_links_wrapp">
+                <div>
+                  <div class="add_link add_link_2">
+                    <div>
+                      <p>Яндекс.Деньги</p>
+                    </div>
+                    <div>
+                      <button type="button" class="plus_btn"></button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="add_link add_link_2">
+                    <div>
+                      <p>WebMoney</p>
+                    </div>
+                    <div>
+                      <button type="button" class="plus_btn"></button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="add_link add_link_2">
+                    <div>
+                      <p>Кошелек QIWI</p>
+                    </div>
+                    <div>
+                      <button type="button" class="plus_btn"></button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="add_link add_link_2">
+                    <div>
+                      <p>PayPal</p>
+                    </div>
+                    <div>
+                      <button type="button" class="plus_btn"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wallet_item">
+              <div class="accordion accordion--open">
+                  <h3 class="btn--accordion btn--arrow-down">История платежей</h3>
+                  <div class="accordion__back"></div>
+              </div>
+            </div>
+            
+         </div>
+         <!-- /Section 1 - Wallet -->
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__item footer__social">
+            <ul>
+              <li><a href="https://www.instagram.com/?hl=ru" target="_blank">Инстаграм</a></li>
+              <li><a href="https://www.vk.com" target="_blank">Вконтакте</a></li>
+              <li><a href="https://www.facebook.com" target="_blank">Фейсбук</a></li>
+              <li><a href="https://ru.linkedin.com/" target="_blank">Linkedin</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h3>Контакты</h3>
+            <ul>
+              <li><a href="tel:+7 967 1927021">Телефон: +7 967 1927021</a></li>
+              <li><a href="tel:+7 967 1927021">Whatsapp: +7 967 1927021</a></li>
+              <li><a href="mailto:info@mycrane.ru">info@mycrane.ru</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h3>О компании</h3>
+            <ul>
+              <li><a href="#!">Новости</a></li>
+              <li><a href="#!">Заказчикам</a></li>
+              <li><a href="#!">Исполнителям</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h3>Документы</h3>
+            <ul>
+              <li><a href="#!">Политика конфиденциальности</a></li>
+              <li><a href="#!">Договор оферты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cover"></div>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

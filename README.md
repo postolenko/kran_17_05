@@ -10,3 +10,4 @@
 # http://postolenko.github.io/kran_17_05/my_add_crane_3.html
 # http://postolenko.github.io/kran_17_05/my_vacancies.html
 # http://postolenko.github.io/kran_17_05/user_vacancy.html
+# http://postolenko.github.io/kran_17_05/wallet.html
