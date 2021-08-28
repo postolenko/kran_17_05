@@ -2457,6 +2457,10 @@
 	border: 1px solid rgb(250, 210, 0);
 	font-size: 14px;
 	line-height: 32px;
+	color: #000;
+}
+
+.yellow_input input::placeholder {
 	color: #b2b2b2;
 }
 
