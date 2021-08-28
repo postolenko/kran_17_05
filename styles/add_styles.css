@@ -2684,7 +2684,7 @@
 	display: -webkit-flex;
 	width: 100%;
 	margin-bottom: 100px;
-	padding: 0 15px 50px 25px;
+	padding: 0 15px 50px 15px;
 	border-radius: 5px 5px 0 0;
 	-webkit-border-radius: 5px 5px 0 0;
 	border: 1px solid #e5e5e5;
