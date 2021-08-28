@@ -11,3 +11,4 @@
 # http://postolenko.github.io/kran_17_05/my_vacancies.html
 # http://postolenko.github.io/kran_17_05/user_vacancy.html
 # http://postolenko.github.io/kran_17_05/wallet.html
+# http://postolenko.github.io/kran_17_05/settings.html

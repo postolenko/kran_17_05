@@ -2676,3 +2676,242 @@
 }
 
 /*-- /Section 1 - Wallet --*/
+
+/*-- Section 1 - Settings --*/
+
+.settings_templ {
+	display: flex;
+	display: -webkit-flex;
+	width: 100%;
+	margin-bottom: 100px;
+	padding: 0 15px 50px 25px;
+	border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border: 1px solid #e5e5e5;
+}
+
+.main-title_2 {
+	margin-bottom: 0;
+	padding: 24px 0 0 10px;
+}
+
+.settings_templ > .left_col {
+	width: calc(100% - 260px);
+	padding-right: 8px;
+}
+
+.settings_templ > .right_col {
+	width: 260px;
+	padding-top: 26px;
+	padding-left: 8px;
+}
+
+.settings_item {
+	border-bottom: 1px solid #e8e8e8;
+	padding: 0 0 15px 10px;
+}
+
+.settings_templ .settings_item:last-child {
+	border-bottom: none;
+}
+
+.email_two_cols {
+	display: flex;
+	display: -webkit-flex;
+	padding: 12px 0;
+}
+
+.email_two_cols > .left_col {
+	width: calc(100% - 140px);
+	padding-right: 10px;
+}
+
+.email_two_cols > .right_col {
+	width: 140px;
+	padding-left: 10px;
+}
+
+.email_two_cols > .right_col .yellow_pill {
+	width: 100%;
+}
+
+.email_two_cols p {
+	margin: 5px 0 0 0;
+}
+
+.yellow_pill.sb {
+	font-weight: 600;
+}
+
+.input_two_cols {
+	display: flex;
+	display: -webkit-flex;
+	max-width: 270px;
+	margin: 12px 0;
+}
+
+.input_two_cols > .left_col {
+	width: calc(100% - 35px);
+	padding-right: 2px;
+}
+
+.input_two_cols > .right_col {
+	width: 35px;
+	padding-left: 2px;
+}
+
+.private_info {
+	max-width: 340px;
+}
+
+.private_info .yellow_input {
+	margin: 13px 0;
+}
+
+.yellow_input textarea {
+	display: block;
+    width: 100%;
+    resize: none;
+    padding: 3px 15px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    height: 90px;
+    border: 1px solid rgb(250, 210, 0);
+    font-size: 14px;
+    line-height: 23px;
+    color: #000;
+}
+
+.yellow_input textarea::placeholder {
+	color: #b2b2b2;
+}
+
+.add_photo_2 {
+	display: block;
+	width: 250px;
+	padding: 10px 10px 15px 10px;
+	cursor: pointer;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border: 1px solid #ffd300;
+	background-color: #fff;
+	position: relative;
+	text-align: center;
+}
+
+.add_photo_2 input {
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.photo_icon_3_wrapp {
+	width: 104px;
+	height: 90px;
+	position: relative;
+	overflow: hidden;
+	margin: 10px auto;
+}
+
+.photo_icon_3 {
+	display: block;
+	width: auto;
+	height: auto;
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+
+.add_photo_2 h3 {
+	padding: 7px 0;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 18px;
+	color: #000;
+}
+
+.add_photo_2 p {
+	margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+    padding: 7px 0;
+}
+
+.add_photo .upl_img,
+.add_photo_2 .upl_img {
+	display: none;
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .5;
+}
+
+@media only screen and (max-width: 700px) {
+
+	.settings_templ {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.settings_templ > .left_col {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.settings_templ > .right_col {
+	    width: 100%;
+	    padding-top: 0;
+	    padding-left: 0;
+	}
+
+	.main-title_2 {
+	    padding: 24px 0 0 0;
+	}
+
+	.settings_item {
+	    padding: 0 0 15px 0;
+	}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+	.email_two_cols {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.email_two_cols > .left_col {
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.email_two_cols > .right_col {
+		padding-top: 10px;
+	    padding-left: 0;
+	}
+
+	.settings_templ .add_photo_2 {
+		width: 100%;
+		max-width: 250px;
+	}
+
+}
+
+/*-- /Section 1 - Settings --*/

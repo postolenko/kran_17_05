@@ -9,7 +9,7 @@
     <meta name="msapplication-TileColor" content="#000">
     <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#000">
-    <title>Заказать дополнительные услуги | MyCrane</title>
+    <title>Заказать грузоподъемные услуги | MyCrane</title>
     <link href="styles/main.css" rel="stylesheet">
     <link href="styles/add_styles.css" rel="stylesheet">
   </head>
@@ -18,134 +18,91 @@
       <div class="sidebar">
         <div class="sidebar__user"><img class="sidebar__user-img" src="img/icons/user.svg" alt="ООО “ХимСтрой”">
           <div class="sidebar__user-info">
-            <div class="sidebar__user-title">ООО “ХимСтрой”</div>
+            <div class="sidebar__user-title">MyСrane</div>
             <div class="sidebar__user-nav"><a class="sidebar__user-link" href="#!">Профиль</a><a class="sidebar__user-link" href="#!">Выход</a></div>
           </div>
-        </div>        
-        <div class="btn_blocks_wrapp btn_blocks_wrapp_2">
+        </div>
+        <div class="btn_blocks_wrapp">
           <div class="btn--block btn--block_2">
-            <a class="btn btn--border" href="#">Создать резюме</a>
+            <a class="btn btn--border" href="#">Подать объявление</a>
           </div>
-          <div class="btn--block btn--block_3">
-            <a class="btn btn--border btn_border_3" href="#">Редактировать резюме</a>
-          </div>
-          <div class="btn--block btn--block_3">
-            <a class="btn btn--border btn_border_3" href="#">Автоподнятие резюме</a>
+          <div class="btn--block btn--block_2">
+            <a class="btn btn--border" href="#">Подать вакансию</a>
           </div>
         </div>
         <div class="sidebar__nav">
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/edit.svg" alt="Мои заявки">Мои объявления</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/vacansies.svg" alt="Парк техники и подписки">Мои вакансии</a></div>
           <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/chat.svg" alt="Сообщения">Сообщения</a></div>
-          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/settings.svg" alt="Поддержка">Настройки</a></div>
+          <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/wallet.svg" alt="Черный список">Кошелек</a></div>
+          <div class="sidebar__nav-item sidebar__nav-item-active"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/settings.svg" alt="Поддержка">Настройки</a></div>
           <div class="sidebar__nav-item"><a class="sidebar__nav-link" href="#!"><img class="sidebar__nav-icons" src="img/icons/sidebar/support.svg" alt="Поддержка">Поддержка</a></div>
         </div>
       </div>
       <div class="header">
         <button class="btn btn--light header__burger" aria-label="show mobile menu"></button><a class="header__logo" href="#!"><img class="header__logo-img" src="img/icons/logo.svg" alt="logo"></a>
       </div>
-
-
       <div class="main-container">
-        <h1 class="main-title">Резюме</h1>
-        <!-- User Vacansy -->
-
-        <div class="resume_templ">
-          <div class="left_col">
-            <div class="resume_row resume_row_2">
-              <div class="user_2 user_2_3">
-                <div>
-                  <div class="user_2_img">
-                    <img src="img/user_green.svg" alt="">
+         <!-- Section 1 - Settings -->         
+         <div class="settings_templ">
+           <div class="left_col">
+             <h1 class="main-title_2">Настройки</h1>
+             <div>
+               <div class="settings_item">
+                <div class="wallet_item_title">
+                  <h3>Электронная почта</h3>
+                </div>
+                <div class="email_two_cols">
+                  <div class="left_col">
+                    <p>321987@mail.ru</p>
+                  </div>
+                  <div class="right_col">
+                    <button type="submit" class="yellow_pill sb">Изменить</button>
                   </div>
                 </div>
-                <div>
-                  <h3>Попов Петр Петрович</h3>
-                  <p>27/03/1962</p>
-                  <p>г. Москва</p>
+               </div>
+               <div class="settings_item">
+                <div class="wallet_item_title">
+                  <h3>Мои телефоны</h3>
+                </div>
+                <div class="input_two_cols">
+                  <div class="left_col">
+                    <div class="yellow_input">
+                      <input type="text" placeholder="+7" />
+                    </div>
+                  </div>
+                  <div class="right_col">
+                    <button type="button" class="plus_btn"></button>
+                  </div>
+                </div>
+               </div>
+              <div class="settings_item">
+                <div class="wallet_item_title">
+                  <h3>Личные данные</h3>
+                </div>
+                <div class="private_info">
+                  <div class="yellow_input">
+                    <input type="text" placeholder="Ник" />
+                  </div>
+                  <div class="yellow_input">
+                    <input type="text" placeholder="Имя" />
+                  </div>
+                  <div class="yellow_input">
+                    <input type="text" placeholder="Город" />
+                  </div>
+                  <div class="yellow_input">
+                    <input type="text" placeholder="День рождения" />
+                  </div>
+                  <div class="yellow_input">
+                    <textarea placeholder="О себе"></textarea>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="resume_row">
-              <div class="resume_item">
-                <div>
-                  <p>Опыт работы</p>
-                </div>
-                <div>
-                  <p>20 лет</p>
-                </div>
-              </div>
-              <div class="resume_item">
-                <div>
-                  <p>Специальность</p>
-                </div>
-                <div>
-                  <p>Оператор гусеничного крана</p>
-                </div>
-              </div>
-              <div class="resume_item">
-                <div>
-                  <p>Производитель</p>
-                </div>
-                <div>
-                  <p>Liebherr</p>
-                </div>
-              </div>
-              <div class="resume_item">
-                <div>
-                  <p>Модель</p>
-                </div>
-                <div>
-                  <p>LR 1750</p>
-                </div>
-              </div>
-            </div>
-            <div class="resume_row">
-              <div class="resume_item">
-                <div>
-                  <p>Место работы</p>
-                </div>
-                <div>
-                  <p>ООО МАШРЕЗЕРВ</p>
-                </div>
-              </div>
-              <div class="resume_item">
-                <div>
-                  <p>Время работы</p>
-                </div>
-                <div>
-                  <p>С 01.1991 по настоящее время</p>
-                </div>
-              </div>
-            </div>
-            <div class="resume_row">
-              <div class="resume_item">
-                <div>
-                  <p>Образование</p>
-                </div>
-                <div>
-                  <p>Среднее-специальное</p>
-                </div>
-              </div>
-              <div class="resume_item">
-                <div>
-                  <p>Занятость</p>
-                </div>
-                <div>
-                  <p>Полная</p>
-                </div>
-              </div>
-              <div class="resume_item">
-                <div>
-                  <p>Разрешение на работу</p>
-                </div>
-                <div>
-                  <p>Да</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="right_col">
-          	<form runat="server">
-              <label class="add_photo" for="imgInp">
+             </div>
+           </div>
+           <div class="right_col">
+             <form runat="server">
+              <label class="add_photo_2" for="imgInp">
                 <input accept="img/*" type="file" id="imgInp">
                 <div class="photo_icon_3_wrapp">
                   <img class="photo_icon_3" src="img/photo_icon.svg" alt="" />
@@ -155,13 +112,10 @@
                 <div class="upl_img" id="blah" style="background-image: url(img/)"></div>
               </label>
             </form>
-          </div>
-        </div>
-
-        <!-- /User Vacansy -->
+           </div>
+         </div>
+         <!-- /Section 1 - Settings -->
       </div>
-
-
     </div>
     <div class="footer">
       <div class="container">
@@ -201,8 +155,8 @@
       </div>
     </div>
     <div class="cover"></div>
-   <!--  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>
