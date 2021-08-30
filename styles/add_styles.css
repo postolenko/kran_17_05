@@ -2743,6 +2743,11 @@
 	font-weight: 600;
 }
 
+.tels_wrapp .templ {
+	height: 0;
+	overflow: hidden;
+}
+
 .input_two_cols {
 	display: flex;
 	display: -webkit-flex;
@@ -2915,3 +2920,91 @@
 }
 
 /*-- /Section 1 - Settings --*/
+
+/*-- Popup --*/
+
+body.fixed {
+    width: 100%;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+.popup {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.popup_bg {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(88, 74, 69, .8);
+    z-index: 19;
+}
+
+.popup_content {
+    max-width: 400px;
+    width: 94%;
+    margin: 120px auto 20px auto;
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border: 1px solid rgb(255, 211, 0);
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.popup_content .inner {
+	padding: 30px 16px 16px 16px;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 2;
+}
+
+.close_popup {
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: none !important;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url(../img/close.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.popup_content .close_popup {
+	cursor: pointer;
+    position: absolute;
+	top: 11px;
+	right: 14px;
+    z-index: 3;
+}
+
+.yellow_input label {
+	display: block;
+	padding-bottom: 10px;
+}
+
+.submit_wrapp {
+	text-align: center;
+	padding: 10px 0;
+}
+
+.submit_wrapp .yellow_pill {
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*-- /Popup --*/

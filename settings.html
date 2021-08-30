@@ -57,7 +57,7 @@
                     <p>321987@mail.ru</p>
                   </div>
                   <div class="right_col">
-                    <button type="submit" class="yellow_pill sb">Изменить</button>
+                    <button type="submit" class="yellow_pill sb" data-popup-link = "popup_1">Изменить</button>
                   </div>
                 </div>
                </div>
@@ -65,14 +65,28 @@
                 <div class="wallet_item_title">
                   <h3>Мои телефоны</h3>
                 </div>
-                <div class="input_two_cols">
-                  <div class="left_col">
-                    <div class="yellow_input">
-                      <input type="text" placeholder="+7" />
+                <div class="tels_wrapp">
+                  <div class="templ">
+                    <div class="input_two_cols">
+                      <div class="left_col">
+                        <div class="yellow_input">
+                          <input type="text" placeholder="+7" />
+                        </div>
+                      </div>
+                      <div class="right_col">
+                        <button type="button" class="plus_btn add_tel"></button>
+                      </div>
                     </div>
                   </div>
-                  <div class="right_col">
-                    <button type="button" class="plus_btn"></button>
+                  <div class="input_two_cols">
+                    <div class="left_col">
+                      <div class="yellow_input">
+                        <input type="text" placeholder="+7" />
+                      </div>
+                    </div>
+                    <div class="right_col">
+                      <button type="button" class="plus_btn add_tel"></button>
+                    </div>
                   </div>
                 </div>
                </div>
@@ -155,6 +169,30 @@
       </div>
     </div>
     <div class="cover"></div>
+
+    <!-- Popup -->
+
+    <div class="popup popup_sect" data-popup = "popup_1">
+      <div class="popup_content">
+          <button type="button" class="close_popup"></button>
+          <div class="inner">
+              <form>            
+                <div class="yellow_input">
+                  <label>Введите email:</label>
+                  <input type="text" />
+                </div>
+                <div class="submit_wrapp">
+                  <button type="submit" class="yellow_pill">Соранить</button>
+                </div>
+              </form>
+          </div>
+      </div>
+    </div>
+    <div class="popup_bg"></div>
+
+    <!-- /Popup -->
+
+
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="scripts/main.js"></script>
