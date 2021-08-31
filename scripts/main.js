@@ -118,14 +118,6 @@
 
   // ----------------
 
-  // imgInp.onchange = evt => {
-  //   const [file] = imgInp.files
-  //   if (file) {
-  //     blah.src = URL.createObjectURL(file)
-  //   }
-  // }
-
-
   if($("#imgInp").length > 0) {
     imgInp.onchange = evt => {
       const [file] = imgInp.files
@@ -145,7 +137,15 @@
     e.preventDefault();
     parent = $(this).closest(".tels_wrapp");
     templ = parent.find(".templ .input_two_cols");
-    templ.clone().appendTo(parent);
+    templ.clone().appendTo(parent.find(".tels_sect"));
+    addTel = parent.find(".tels_sect .yellow_input");
+    addTelLength = addTel.length;
+    addTel.each(function() {
+      if( $(this).index(".yellow_input") <= (addTelLength - 1) ) {
+        parent2 = $(this).closest(".input_two_cols");
+        parent2.find(".add_tel").remove();
+      }
+    });
   });
 
   // -----------------
@@ -220,8 +220,6 @@
         }
       }
     });
-
-    // -----------
 
 })(jQuery);
 
