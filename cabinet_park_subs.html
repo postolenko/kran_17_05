@@ -104,10 +104,10 @@
 
               <div class="input">
                 <label class="input__label">Тип крана</label>
-                <select class="input__elem" name="type-tap">
-                  <option value="">Автомобильный с телескопической стрелой</option>
-                  <option value="">Тип 2</option>
-                  <option value="">Тип 3</option>
+                <select class="input__elem" name="type-tap" id="selectMask">
+                  <option value="1" data-maxlenght = "17">Автомобильный с телескопической стрелой</option>
+                  <option value="2" data-maxlenght = "6">Гусеничный кран</option>
+                  <option value="3" data-maxlenght = "">Башенный кран</option>
                 </select>
               </div>
 
@@ -133,7 +133,7 @@
               <div class="form--row">
                 <div class="input input--medium_1">
                   <label class="input__label">Модель</label>
-                  <input class="input__elem" type="text" name="carrying">
+                  <input maxlength="17" class="input__elem" type="text" name="carrying" id="inputMask">
                 </div>
                 <div class="input input--medium_2">
                   <label class="input__label">Год выпуска</label>
@@ -402,6 +402,7 @@
     </div>
     <div class="cover"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/inputmask.js"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>

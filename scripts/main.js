@@ -221,5 +221,17 @@
       }
     });
 
+    // ---------------
+
+    $("#selectMask").on("change", function(e) {
+      e.preventDefault();
+      selectVal = $(this).val();
+      maxLength = parseInt( $(this).find("option[value = '"+selectVal+"']").attr("data-maxlenght") );
+      $("#inputMask").attr("maxlength", maxLength);
+      $("#inputMask").inputmask({ 
+        regex: "[0-9a-zA-Z]*"
+      });
+    });
+
 })(jQuery);
 
