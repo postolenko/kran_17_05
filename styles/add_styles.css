@@ -3008,3 +3008,13 @@ body.fixed {
 }
 
 /*-- /Popup --*/
+
+#inputMask.error {
+	border-color: #ff0000;
+}
+
+#submitBtn.cansel {
+	cursor: default;
+	pointer-events: none;
+	opacity: .5;
+}
