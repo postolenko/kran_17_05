@@ -242,7 +242,7 @@
       $("#inputMask").inputmask({ 
         regex: "[0-9a-zA-Z]*"
       });
-      $("#inputMask").attr("maxlength", maxLength);
+      // $("#inputMask").attr("maxlength", maxLength);
       if($("#inputMask").val().length < maxLength) {
         $("#inputMask").addClass("error");
         $("#submitBtn").addClass("cansel");
@@ -256,7 +256,7 @@
     // $("#inputMask").on("keyup", function(e) {
     $(document).on("keyup", "#inputMask", function(e) {
       e.preventDefault();
-      maxLength = parseInt($(this).attr("maxlength"));
+      // maxLength = parseInt($(this).attr("maxlength"));
       if($(this).val().length < maxLength) {
         $(this).addClass("error");
         $("#submitBtn").addClass("cansel");
