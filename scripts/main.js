@@ -250,7 +250,7 @@
         $("#inputMask").removeClass("error");
         $("#submitBtn").removeClass("cansel");
       }
-      console.log(maxLength);
+      console.log( selectVal +"  "+ maxLength);
     });
 
     $("#inputMask").on("keyup", function(e) {
