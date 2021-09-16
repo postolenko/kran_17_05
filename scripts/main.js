@@ -253,7 +253,8 @@
       console.log( selectVal +"  "+ maxLength);
     });
 
-    $("#inputMask").on("keyup", function(e) {
+    // $("#inputMask").on("keyup", function(e) {
+    $(document).on("keyup", "#inputMask", function(e) {
       e.preventDefault();
       maxLength = parseInt($(this).attr("maxlength"));
       if($(this).val().length < maxLength) {
