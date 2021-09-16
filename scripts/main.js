@@ -263,7 +263,7 @@
       } else {
         $(this).removeClass("error");
         $("#submitBtn").removeClass("cansel");
-        $('#filledInput').val($('#fillingInput').val().slice(0,maxLength));
+        $('#inputMask').val($('#inputMask').val().slice(0,maxLength));
       }
       console.log($(this).val().length +"   "+ maxLength);
     });
