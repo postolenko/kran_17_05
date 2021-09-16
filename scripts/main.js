@@ -242,7 +242,6 @@
       $("#inputMask").inputmask({ 
         regex: "[0-9a-zA-Z]*"
       });
-      // $("#inputMask").attr("maxlength", maxLength);
       if($("#inputMask").val().length < maxLength) {
         $("#inputMask").addClass("error");
         $("#submitBtn").addClass("cansel");
@@ -251,13 +250,10 @@
         $("#submitBtn").removeClass("cansel");
         $('#inputMask').val($('#inputMask').val().slice(0,maxLength));
       }
-      console.log( selectVal +"  "+ maxLength);
     });
 
-    // $("#inputMask").on("keyup", function(e) {
     $(document).on("keyup", "#inputMask", function(e) {
       e.preventDefault();
-      // maxLength = parseInt($(this).attr("maxlength"));
       if($(this).val().length < maxLength) {
         $(this).addClass("error");
         $("#submitBtn").addClass("cansel");
@@ -266,7 +262,6 @@
         $("#submitBtn").removeClass("cansel");
         $('#inputMask').val($('#inputMask').val().slice(0,maxLength));
       }
-      console.log($(this).val().length +"   "+ maxLength);
     });
 
 })(jQuery);
