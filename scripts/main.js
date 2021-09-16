@@ -260,6 +260,7 @@
         $(this).removeClass("error");
         $("#submitBtn").removeClass("cansel");
       }
+      console.log($(this).val().length +"   "+ maxLength);
     });
 
 })(jQuery);
