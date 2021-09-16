@@ -240,7 +240,7 @@
       selectVal = $(this).val();
       maxLength = parseInt( $(this).find("option[value = '"+selectVal+"']").attr("data-maxlenght") );
       $("#inputMask").inputmask({ 
-        regex: "[0-9a-zA-Z]*"
+        regex: "[0-9]*"
       });
       if($("#inputMask").val().length < maxLength) {
         $("#inputMask").addClass("error");
