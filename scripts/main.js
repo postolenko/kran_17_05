@@ -223,6 +223,8 @@
 
     // ---------------
 
+    var selectVal, maxLength;
+
     selectVal = $("#selectMask").val();
     maxLength = parseInt( $("#selectMask").find("option[value = '"+selectVal+"']").attr("data-maxlenght") );
     if($("#inputMask").val().length < maxLength) {
@@ -248,6 +250,7 @@
         $("#inputMask").removeClass("error");
         $("#submitBtn").removeClass("cansel");
       }
+      console.log(maxLength);
     });
 
     $("#inputMask").on("keyup", function(e) {
