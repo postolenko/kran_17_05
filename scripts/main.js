@@ -249,6 +249,7 @@
       } else {
         $("#inputMask").removeClass("error");
         $("#submitBtn").removeClass("cansel");
+        $('#inputMask').val($('#inputMask').val().slice(0,maxLength));
       }
       console.log( selectVal +"  "+ maxLength);
     });
