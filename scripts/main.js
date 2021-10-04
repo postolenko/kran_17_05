@@ -235,32 +235,52 @@
       $("#submitBtn").removeClass("cansel");
     }
 
+
+    if($("#inputMask").length > 0) {
+      $("#inputMask").inputmask({ 
+        regex: "[a-za-zA-Z0-9]*"
+      });
+    }
+
     $("#selectMask").on("change", function(e) {
       e.preventDefault();
       selectVal = $(this).val();
-      maxLength = parseInt( $(this).find("option[value = '"+selectVal+"']").attr("data-maxlenght") );
-      $("#inputMask").inputmask({ 
-        regex: "[0-9]*"
-      });
+      if($(this).find("option[value = '"+selectVal+"']").attr("data-maxlenght") != "") {
+        maxLength = parseInt( $(this).find("option[value = '"+selectVal+"']").attr("data-maxlenght") );
+      } else {
+        maxLength = false;
+      }
       if($("#inputMask").val().length < maxLength) {
         $("#inputMask").addClass("error");
         $("#submitBtn").addClass("cansel");
       } else {
         $("#inputMask").removeClass("error");
         $("#submitBtn").removeClass("cansel");
-        $('#inputMask').val($('#inputMask').val().slice(0,maxLength));
+        if(maxLength != false) {
+          $('#inputMask').val($('#inputMask').val().slice(0,maxLength));
+        }
       }
     });
 
     $(document).on("keyup", "#inputMask", function(e) {
       e.preventDefault();
+      selectVal = $("#selectMask").val();
+      // maxLength = parseInt( $("#selectMask").find("option[value = '"+selectVal+"']").attr("data-maxlenght") );
+      // console.log(maxLength);
+      if($("#selectMask").find("option[value = '"+selectVal+"']").attr("data-maxlenght") != "") {
+        maxLength = parseInt( $("#selectMask").find("option[value = '"+selectVal+"']").attr("data-maxlenght") );
+      } else {
+        maxLength = false;
+      }
       if($(this).val().length < maxLength) {
         $(this).addClass("error");
         $("#submitBtn").addClass("cansel");
       } else {
         $(this).removeClass("error");
-        $("#submitBtn").removeClass("cansel");
-        $('#inputMask').val($('#inputMask').val().slice(0,maxLength));
+        $("#submitBtn").removeClass("cansel");        
+        if(maxLength != false) {
+          $('#inputMask').val($('#inputMask').val().slice(0,maxLength));
+        }
       }
     });
 
