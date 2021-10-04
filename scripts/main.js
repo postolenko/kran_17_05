@@ -238,7 +238,7 @@
 
     if($("#inputMask").length > 0) {
       $("#inputMask").inputmask({ 
-        regex: "[a-za-zA-Z0-9]*"
+        regex: "[a-za-zA-Z0-9.]*"
       });
     }
 
