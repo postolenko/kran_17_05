@@ -223,10 +223,18 @@
 
     // ---------------
 
+    if($("#inputMask").length > 0) {
+      $("#inputMask").inputmask({
+        regex: "[a-za-zA-Z0-9.]*",
+      });
+    }
+
     var selectVal, maxLength;
 
     selectVal = $("#selectMask").val();
     maxLength = parseInt( $("#selectMask").find("option[value = '"+selectVal+"']").attr("data-maxlenght") );
+    placeholder = $("#selectMask").find("option[value = '"+selectVal+"']").attr("data-placeholder");
+
     if($("#inputMask").val().length < maxLength) {
       $("#inputMask").addClass("error");
       $("#submitBtn").addClass("cansel");
@@ -235,12 +243,7 @@
       $("#submitBtn").removeClass("cansel");
     }
 
-
-    if($("#inputMask").length > 0) {
-      $("#inputMask").inputmask({ 
-        regex: "[a-za-zA-Z0-9.]*"
-      });
-    }
+    $("#inputMask").attr("placeholder", placeholder);
 
     $("#selectMask").on("change", function(e) {
       e.preventDefault();
@@ -250,6 +253,8 @@
       } else {
         maxLength = false;
       }
+      placeholder = $(this).find("option[value = '"+selectVal+"']").attr("data-placeholder");
+      $("#inputMask").attr("placeholder", placeholder);
       if($("#inputMask").val().length < maxLength) {
         $("#inputMask").addClass("error");
         $("#submitBtn").addClass("cansel");
@@ -265,8 +270,6 @@
     $(document).on("keyup", "#inputMask", function(e) {
       e.preventDefault();
       selectVal = $("#selectMask").val();
-      // maxLength = parseInt( $("#selectMask").find("option[value = '"+selectVal+"']").attr("data-maxlenght") );
-      // console.log(maxLength);
       if($("#selectMask").find("option[value = '"+selectVal+"']").attr("data-maxlenght") != "") {
         maxLength = parseInt( $("#selectMask").find("option[value = '"+selectVal+"']").attr("data-maxlenght") );
       } else {
